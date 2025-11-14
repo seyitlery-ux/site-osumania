@@ -1,0 +1,61 @@
+/* Genel Stil */
+body {
+    font-family: Arial, sans-serif;
+    background: #a60000; /* Kırmızı arka plan */
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Kart tasarımı */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+/* Mania Önizleme */
+.mania-preview {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Her tuş için lane */
+.keylane {
+    width: 40px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Notalar */
+.note {
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    top: -20px;
+    animation: fall 1s linear infinite;
+}
+
+/* Notaların düşme animasyonu */
+@keyframes fall {
+    from { top: -20px; }
+    to { top: 220px; }
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    opacity: 0.7;
+}
